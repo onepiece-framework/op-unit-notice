@@ -26,7 +26,7 @@ register_shutdown_function(function(){
 			Unit::Load('webpack');
 
 			/* @var $webpack \OP\UNIT\WebPack */
-			$webpack = Unit::Instantiate('Webpack');
+			$webpack = Unit('Webpack');
 			$webpack->Js (__DIR__.'/notice');
 			$webpack->Css(__DIR__.'/notice');
 
