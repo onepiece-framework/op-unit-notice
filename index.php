@@ -15,7 +15,9 @@
 namespace OP;
 
 //	...
-include(__DIR__.'/Notice.class.php');
+if(!class_exists('\OP\UNIT\Notice') ){
+    include(__DIR__.'/Notice.class.php');
+}
 
 //	...
 register_shutdown_function(function(){
